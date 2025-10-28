@@ -6,6 +6,8 @@
     <title>Portal JCN1 - Em Construção</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.png" type="image/png">
+    <!-- Ícones Font Awesome para Instagram -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -16,33 +18,49 @@
             flex-direction: column;
             min-height: 100vh;
             background: linear-gradient(135deg, #0C3F74, #074061);
-
             color: #fff;
             text-align: center;
         }
         .logo {
             max-width: 200px;
             margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
         }
         p {
             font-size: 1.2em;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            max-width: 500px;
         }
         .social a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             margin: 0 10px;
-            font-size: 2em;
+            font-size: 1.8em;
             color: #fff;
             text-decoration: none;
-            transition: transform 0.2s;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         .social a:hover {
             transform: scale(1.2);
+            background: #E1306C; /* cor Instagram */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
         }
         .footer {
             position: absolute;
@@ -50,14 +68,21 @@
             font-size: 0.9em;
             color: rgba(255,255,255,0.8);
         }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2em; }
+            p { font-size: 1em; padding: 0 20px; }
+            .social a { width: 45px; height: 45px; font-size: 1.5em; }
+        }
     </style>
 </head>
 <body>
-    <img src="Logo.png" alt="Portal JCN1" class="logo">
-    <h1></h1>
+    <img src="logo.png" alt="Portal JCN1" class="logo">
+    
     <p>Estamos trabalhando para trazer um portal incrível. Em breve, novidades!</p>
     <div class="social">
-        <a href="https://www.instagram.com/jcnoticiasof/" target="_blank" title="Instagram">📸</a>
+        <a href="https://www.instagram.com/jcnoticiasof/" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
     <div class="footer">© 2025 Portal JCN1</div>
 </body>
