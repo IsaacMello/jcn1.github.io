@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal JCN1 - Em Construção</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -18,23 +19,29 @@
             color: #fff;
             text-align: center;
         }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
         }
         p {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
-        .icon {
-            font-size: 4em;
-            margin-bottom: 20px;
-            animation: bounce 1.5s infinite;
+        .social a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.2s;
         }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+        .social a:hover {
+            transform: scale(1.2);
         }
         .footer {
             position: absolute;
@@ -42,29 +49,14 @@
             font-size: 0.9em;
             color: rgba(255,255,255,0.8);
         }
-        .social {
-            margin-top: 20px;
-        }
-        .social a {
-            margin: 0 10px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5em;
-            transition: transform 0.2s;
-        }
-        .social a:hover {
-            transform: scale(1.2);
-        }
     </style>
 </head>
 <body>
-    <div class="icon">🛠️</div>
+    <img src="logo.png" alt="Portal JCN1" class="logo">
     <h1>Portal JCN1</h1>
     <p>Estamos trabalhando para trazer um site incrível. Em breve, novidades!</p>
     <div class="social">
-       
-        <a href="https://www.instagram.com/jcnoticiasof/" title="Instagram">INSTAGRAM 📸</a>
-        
+        <a href="https://www.instagram.com/jcnoticiasof/" target="_blank" title="Instagram">📸</a>
     </div>
     <div class="footer">© 2025 Portal JCN1</div>
 </body>
